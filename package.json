@@ -22,7 +22,7 @@
       "hooks": {
          "pre-commit": "yarn run lint && yarn run test"
       }
-   }
+   },
    "scripts": {
       "lint": "eslint src/** test/** --fix",
       "test": "jest --coverage --runInBand --forceExit",
