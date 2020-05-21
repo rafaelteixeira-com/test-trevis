@@ -1,0 +1,47 @@
+{
+   "name": "node-knex-jest",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "jest": {
+      "coverageThreshold": {
+         "global": {
+            "statements": 50,
+            "branchs": 50,
+            "functions": 50,
+            "lines": 50
+         },
+         "./src/api/users": {
+            "statements": 100,
+            "functions": 100,
+            "lines": 100
+         }
+      }
+   },
+   "husk": {
+      "hooks": {
+         "pre-commit": "yarn run lint && yarn run test"
+      }
+   }
+   "scripts": {
+      "lint": "eslint src/** test/** --fix",
+      "test": "jest --coverage --runInBand --forceExit",
+      "testWatch": "jest --watchAll"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "devDependencies": {
+      "@types/jest": "^25.2.3",
+      "@types/supertest": "^2.0.9",
+      "eslint": "^7.0.0",
+      "eslint-config-google": "^0.14.0",
+      "express": "^4.17.1",
+      "husky": "^4.2.5",
+      "jest": "^26.0.1",
+      "knex": "^0.21.1",
+      "knex-logger": "^0.1.0",
+      "pg": "^8.2.1",
+      "supertest": "^4.0.2"
+   }
+}
