@@ -10,9 +10,9 @@ server.db = knex(knexfile.local);
 
 usersRouter.db = server.db;
 
-const router = express.Router();
+const router = express['Router']();
 
-server.use(knexLogger(server.db))
+server.use(knexLogger(server.db));
 
 router.use(express.json());
 router.use('/api', usersRouter.router);
@@ -20,7 +20,7 @@ router.use('/api', usersRouter.router);
 server.use(router);
 
 server.get('/', (req, res)=>{
-   return res.status(200).send();
+  return res.status(200).send();
 });
 
 

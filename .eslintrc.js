@@ -15,6 +15,10 @@ module.exports = {
       'ecmaVersion': 11,
    },
    'rules': {
-      'indent': 3,
+      'new-cap': 0,
+      'capIsNew': 0,
+      'newIsCap': 0,
+      'indent': 0,
+      'require-jsdoc': 0,
    },
 };
