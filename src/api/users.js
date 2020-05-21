@@ -27,7 +27,7 @@ class UserRouter {
 
       const checkEmailExist = await this.db('users').where( { email } ).select();
 
-      if(checkEmailExist && checkEmailExist.length > 0 )  return res.status(400).json({ error: 'sameEmail' }); 
+      if(checkEmailExist && checkEmailExist.length 0 )  return res.status(400).json({ error: 'sameEmail' }); 
 
       const result = await this.db('users').insert({ name, email, pass }, '*');
 
