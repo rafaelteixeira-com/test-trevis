@@ -33,7 +33,7 @@ class UserRouter {
    }
 
    async index(req, res) {
-      console.log('test', this);
+      //console.log('test', this);
       const result = await this.db('users').select();
       return res.status(200).json(result);
    }
