@@ -6,7 +6,7 @@ const knexLogger = require('knex-logger');
 
 const server = express();
 
-server.db = knex(knexfile.local);
+server.db = knex(knexfile.elephant);
 
 usersRouter.db = server.db;
 
