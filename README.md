@@ -1,1 +1,1 @@
-# test-trevis
+# test-trevis [![Build Status](https://travis-ci.org/rafaelteixeira-com/test-trevis.svg?branch=master)](https://travis-ci.org/rafaelteixeira-com/test-trevis)
