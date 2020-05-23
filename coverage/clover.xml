@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1590230270406" clover="3.2.0">
-  <project timestamp="1590230270406" name="All files">
+<coverage generated="1590230466186" clover="3.2.0">
+  <project timestamp="1590230466186" name="All files">
     <metrics statements="36" coveredstatements="36" conditionals="10" coveredconditionals="10" methods="5" coveredmethods="5" elements="51" coveredelements="51" complexity="0" loc="36" ncloc="36" packages="3" files="3" classes="3"/>
     <package name="node-knex-jest">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
